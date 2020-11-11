@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>reg</title>
+<script>
+function val()
+{
+var a=document.reg.email.value;
+if(a.indexOf('@')<=0)
+{
+document.getElementById("demo").innerHTML="invalid";
+return false;
+}
+
+
+}
+</script>
+</head>
+<body>
+<form name="reg" onsubmit="return val()">
+EMAIL:<input type="text" name="email">
+<br>
+<p id="demo"></p>
+
+<input type="submit" value="submit">
+
+
+</form>
+</body>
+</html>
